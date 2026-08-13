@@ -1,1 +1,1224 @@
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@400;600;800;900&display=swap');*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;font-family:Inter,Arial;background:#070913;color:#fff}body:before{content:"";position:fixed;inset:-100%;pointer-events:none;z-index:20;opacity:.12;background:repeating-linear-gradient(105deg,transparent 0 60px,#fff 61px,#fff 62px,transparent 63px 125px);animation:r 1s linear infinite}@keyframes r{to{transform:translate(-80px,120px)}}header{position:fixed;z-index:30;top:0;left:0;right:0;height:64px;padding:0 5vw;display:flex;align-items:center;justify-content:space-between;background:#070913b9;border-bottom:1px solid #fff2;backdrop-filter:blur(12px);font:28px Bangers;letter-spacing:2px}header span,.copy span,h2 span{color:#ff5b93}header em{font:900 10px Inter;letter-spacing:3px}.screen{height:100vh;width:100vw;display:flex;align-items:center;position:relative;overflow:hidden}.hero{background:radial-gradient(circle at 70% 35%,#34488d,#151d48 30%,#070913 70%)}.hero:after{content:"";position:absolute;bottom:0;left:0;right:0;height:30%;background:#060811;clip-path:polygon(0 55%,5% 38%,10% 58%,15% 27%,20% 48%,26% 30%,32% 52%,38% 20%,44% 49%,50% 31%,56% 52%,63% 25%,70% 49%,77% 20%,84% 44%,91% 27%,100% 48%,100% 100%,0 100%)}.copy{z-index:5;margin-left:8vw;max-width:760px}.copy>small,.panel>small,.letter>article>small{font-size:10px;font-weight:900;letter-spacing:4px;color:#ff8db4}.copy h1,.panel h2,.natalia h2,.birthday h2,.letter h2{font:400 clamp(70px,10vw,145px)/.84 Bangers;letter-spacing:2px;margin:18px 0}.hero h1 span{color:#e92332;text-shadow:5px 5px #fff}.copy p{font-size:18px;line-height:1.7;color:#dce1f4}.copy button,.panel button,.birthday button{background:#e92332;color:#fff;border:0;padding:17px 25px;font-weight:900;letter-spacing:1px;box-shadow:6px 6px #fff;cursor:pointer}.copy button:hover,.panel button:hover,.birthday button:hover{transform:translate(3px,3px);box-shadow:2px 2px #fff}.hero label{position:absolute;bottom:24px;left:0;right:0;text-align:center;font-size:9px;letter-spacing:4px;opacity:.45}.spider{position:absolute;right:15%;top:22%;font-size:100px;z-index:4;animation:s 3s ease-in-out infinite}@keyframes s{50%{transform:rotate(-8deg) translateY(15px)}}.mission{background:linear-gradient(135deg,#111b49,#080a13);justify-content:center}.panel{width:min(650px,90vw);padding:45px;border:1px solid #fff3;background:#ffffff08;box-shadow:15px 15px #e9233220}.panel h2{margin:22px 0;font-size:clamp(70px,9vw,115px)}.panel h2 span{color:#e92332}.alert{padding:20px;background:#e9233217;border-left:5px solid #e92332;line-height:1.8;font-weight:900}.panel p{color:#c8cce0;line-height:1.6}.bar{height:5px;background:#fff2;margin-top:28px}.bar i{display:block;width:0;height:100%;background:#ff5b93;transition:.3s}.natalia{background:radial-gradient(circle at 70% 30%,#5d4c91,#1b2046 42%,#070913 75%)}.moon{position:absolute;right:13%;top:15%;width:250px;height:250px;border-radius:50%;background:#f8eaf0;box-shadow:0 0 100px #ffc0d9}.natalia .copy{max-width:720px}.natalia h2{font-size:clamp(75px,10vw,145px)}.highlight{border-left:4px solid #ff5b93;padding-left:20px;color:#fff!important}.birthday{background:radial-gradient(circle,#861d4c,#270d30 45%,#070811 82%);flex-direction:column;text-align:center}.num{font:400 clamp(180px,35vw,500px)/.68 Bangers;text-shadow:12px 12px #e92332}.birthday h2{font-size:clamp(70px,9vw,130px);margin:20px 0}.birthday p{max-width:650px;line-height:1.8;color:#e4d8e2}.letter{background:#f3e7d4;color:#17151a;justify-content:center;padding:20px}.letter article{max-width:760px;background:#fffaf0;padding:clamp(30px,6vw,75px);box-shadow:12px 12px #111;border:2px solid #111}.letter h2{font-size:80px}.letter h2 span{color:#d92b4b}.letter article p{line-height:1.9;color:#3d3940}.sig{margin-top:40px;font-family:cursive;font-size:20px}#loader{position:fixed;inset:0;background:#070913;z-index:100;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:.7s}.loader-logo,.loader-logo span{font:70px Bangers}.loader-bar{width:220px;height:4px;background:#fff2}.loader-bar i{display:block;height:100%;background:#e92332;animation:l 1.5s forwards}@keyframes l{to{width:100%}}#loader b{font:70px Bangers}#loader b span{color:#ff5b93}#loader small{margin-top:20px;font-size:9px;letter-spacing:4px}@media(max-width:700px){.copy{margin:0;padding:30px}.spider{right:-30px;top:18%;font-size:70px}.moon{right:-70px;width:210px;height:210px}.panel{padding:30px}}
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+
+/* ================================================= */
+/* VARIÁVEIS */
+/* ================================================= */
+
+:root {
+    --red: #e92332;
+    --pink: #ff5b93;
+    --blue: #101944;
+    --dark: #070913;
+}
+
+
+/* ================================================= */
+/* RESET */
+/* ================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    background: var(--dark);
+    color: white;
+
+    font-family: Inter, Arial, sans-serif;
+
+    overflow-x: hidden;
+
+    /*
+        Evita aquele efeito de "puxar"
+        a página no celular.
+    */
+    overscroll-behavior: none;
+}
+
+
+/* ================================================= */
+/* TELAS */
+/* ================================================= */
+
+.screen {
+
+    width: 100%;
+
+    min-height: 100vh;
+    min-height: 100dvh;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+
+/* ================================================= */
+/* HEADER */
+/* ================================================= */
+
+header {
+
+    position: fixed;
+
+    z-index: 100;
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 64px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 5vw;
+
+    background: rgba(7, 9, 19, .82);
+
+    border-bottom: 1px solid rgba(255,255,255,.12);
+
+    backdrop-filter: blur(12px);
+}
+
+.brand {
+
+    font-family: Bangers;
+
+    font-size: 28px;
+
+    letter-spacing: 2px;
+}
+
+.brand span {
+    color: var(--pink);
+}
+
+header em {
+
+    font-size: 10px;
+
+    font-style: normal;
+
+    font-weight: 900;
+
+    letter-spacing: 3px;
+}
+
+
+/* ================================================= */
+/* LOADER */
+/* ================================================= */
+
+#loader {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 999;
+
+    background: var(--dark);
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    transition: opacity .7s;
+}
+
+#loader b {
+
+    font-family: Bangers;
+
+    font-size: clamp(55px, 12vw, 85px);
+}
+
+#loader b span {
+    color: var(--pink);
+}
+
+#loader i {
+
+    display: block;
+
+    width: 220px;
+
+    max-width: 60vw;
+
+    height: 4px;
+
+    margin: 20px;
+
+    background: var(--red);
+
+    animation: loading 1.5s forwards;
+}
+
+#loader small {
+
+    font-size: 9px;
+
+    letter-spacing: 4px;
+}
+
+@keyframes loading {
+
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 220px;
+    }
+}
+
+
+/* ================================================= */
+/* BOTÕES */
+/* ================================================= */
+
+button {
+
+    border: 0;
+
+    background: var(--red);
+
+    color: white;
+
+    padding: 17px 25px;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    box-shadow: 6px 6px white;
+
+    transition:
+        transform .18s,
+        box-shadow .18s;
+}
+
+button:hover {
+
+    transform: translate(4px, 4px);
+
+    box-shadow: 2px 2px white;
+}
+
+button:active {
+
+    transform: translate(6px, 6px);
+
+    box-shadow: none;
+}
+
+
+/* ================================================= */
+/* HERO */
+/* ================================================= */
+
+.hero {
+
+    background:
+        radial-gradient(
+            circle at 68% 35%,
+            #34488d,
+            #151d48 30%,
+            #070913 70%
+        );
+
+    padding:
+        90px 7vw
+        50px;
+}
+
+.hero .copy {
+
+    position: relative;
+
+    z-index: 5;
+
+    width: min(760px, 90vw);
+
+    margin-right: 25vw;
+}
+
+.hero .copy > small {
+
+    font-size: 10px;
+
+    font-weight: 900;
+
+    letter-spacing: 4px;
+
+    color: #ff8db4;
+}
+
+.hero h1 {
+
+    font-family: Bangers;
+
+    font-weight: 400;
+
+    line-height: .84;
+
+    letter-spacing: 2px;
+
+    font-size:
+        clamp(60px, 10vw, 145px);
+
+    margin: 18px 0;
+}
+
+.hero h1 span {
+
+    color: var(--red);
+
+    text-shadow: 5px 5px white;
+}
+
+.hero p {
+
+    font-size:
+        clamp(14px, 1.6vw, 20px);
+
+    line-height: 1.7;
+
+    color: #dce1f4;
+}
+
+.hero strong {
+    color: white;
+}
+
+
+/* ================================================= */
+/* SPIDER */
+/* ================================================= */
+
+.spider {
+
+    position: absolute;
+
+    right: 13%;
+
+    top: 17%;
+
+    font-size:
+        clamp(60px, 8vw, 100px);
+
+    animation: spiderFloat 3s ease-in-out infinite;
+}
+
+@keyframes spiderFloat {
+
+    0%,
+    100% {
+        transform:
+            translateY(0)
+            rotate(-5deg);
+    }
+
+    50% {
+        transform:
+            translateY(18px)
+            rotate(5deg);
+    }
+}
+
+.hero label {
+
+    position: absolute;
+
+    bottom: 25px;
+
+    font-size: 8px;
+
+    letter-spacing: 3px;
+
+    opacity: .6;
+}
+
+
+/* ================================================= */
+/* MISSÃO */
+/* ================================================= */
+
+.mission {
+
+    background:
+        linear-gradient(
+            135deg,
+            #111b49,
+            #080a13
+        );
+
+    padding:
+        90px 7vw
+        50px;
+}
+
+.panel {
+
+    width: min(650px, 90vw);
+
+    padding:
+        clamp(25px, 5vw, 45px);
+
+    border:
+        1px solid rgba(255,255,255,.2);
+
+    background:
+        rgba(255,255,255,.03);
+
+    box-shadow:
+        15px 15px rgba(233,35,50,.12);
+}
+
+.panel > small {
+
+    font-size: 10px;
+
+    font-weight: 900;
+
+    letter-spacing: 4px;
+
+    color: #ff8db4;
+}
+
+.panel h2 {
+
+    font-family: Bangers;
+
+    font-weight: 400;
+
+    font-size:
+        clamp(60px, 9vw, 115px);
+
+    line-height: .8;
+
+    margin: 22px 0;
+}
+
+.panel h2 span {
+    color: var(--red);
+}
+
+.panel p {
+
+    line-height: 1.7;
+}
+
+.alert {
+
+    padding: 20px;
+
+    background:
+        rgba(233,35,50,.08);
+
+    border-left:
+        5px solid var(--red);
+
+    font-weight: 900;
+
+    line-height: 1.8;
+
+    margin: 20px 0;
+}
+
+.bar {
+
+    height: 5px;
+
+    background: rgba(255,255,255,.12);
+
+    margin-top: 28px;
+}
+
+.bar i {
+
+    display: block;
+
+    width: 0;
+
+    height: 100%;
+
+    background: var(--pink);
+
+    transition: .3s;
+}
+
+#status {
+
+    display: block;
+
+    margin-top: 12px;
+
+    font-size: 10px;
+
+    color: #8991ad;
+}
+
+
+/* ================================================= */
+/* NATÁLIA */
+/* ================================================= */
+
+.natalia {
+
+    background:
+        radial-gradient(
+            circle at 68% 32%,
+            #5d4c91,
+            #1b2046 42%,
+            #070913 75%
+        );
+
+    justify-content: flex-start;
+
+    padding:
+        80px 8vw
+        50px;
+}
+
+.natalia .copy {
+
+    position: relative;
+
+    z-index: 5;
+
+    max-width: 720px;
+}
+
+.natalia .copy > small {
+
+    font-size: 10px;
+
+    font-weight: 900;
+
+    letter-spacing: 4px;
+
+    color: #ff8db4;
+}
+
+.natalia h2 {
+
+    font-family: Bangers;
+
+    font-weight: 400;
+
+    line-height: .84;
+
+    font-size:
+        clamp(65px, 10vw, 145px);
+
+    margin: 18px 0 30px;
+}
+
+.natalia h2 span {
+    color: var(--pink);
+}
+
+.natalia p {
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color: #d7d9e8;
+}
+
+.natalia .highlight {
+
+    font-size: 21px;
+
+    color: white;
+
+    border-left:
+        4px solid var(--pink);
+
+    padding-left: 20px;
+}
+
+
+/* ================================================= */
+/* LUA */
+/* ================================================= */
+
+.moon {
+
+    position: absolute;
+
+    right: 12%;
+
+    top: 13%;
+
+    width:
+        min(250px, 30vw);
+
+    aspect-ratio: 1;
+
+    border-radius: 50%;
+
+    background: #f8eaf0;
+
+    box-shadow:
+        0 0 100px #ffc0d9;
+}
+
+
+/* ================================================= */
+/* ANIVERSÁRIO */
+/* ================================================= */
+
+.birthday {
+
+    background:
+        radial-gradient(
+            circle,
+            #861d4c,
+            #270d30 45%,
+            #070811 82%
+        );
+
+    flex-direction: column;
+
+    text-align: center;
+
+    padding:
+        75px 20px
+        35px;
+
+    gap:
+        clamp(5px, 1vh, 15px);
+}
+
+.birthday > small {
+
+    font-size: 10px;
+
+    font-weight: 900;
+
+    letter-spacing: 4px;
+
+    color: #ff8db4;
+}
+
+
+/*
+    O número 22 foi cuidadosamente
+    limitado para não cortar no celular.
+*/
+
+.birthday .num {
+
+    position: relative;
+
+    z-index: 2;
+
+    font-family: Bangers;
+
+    font-weight: 400;
+
+    font-size:
+        clamp(
+            150px,
+            30vw,
+            430px
+        );
+
+    line-height: .65;
+
+    margin:
+        clamp(10px, 2vh, 25px)
+        0;
+
+    color: white;
+
+    text-shadow:
+        10px 10px var(--red);
+
+    max-width: 90vw;
+
+    white-space: nowrap;
+}
+
+.birthday h2 {
+
+    font-family: Bangers;
+
+    font-weight: 400;
+
+    font-size:
+        clamp(55px, 8vw, 120px);
+
+    line-height: .82;
+
+    margin:
+        5px 0
+        15px;
+}
+
+.birthday h2 span {
+    color: var(--pink);
+}
+
+.birthday > p {
+
+    width:
+        min(650px, 90vw);
+
+    font-size:
+        clamp(12px, 2vw, 16px);
+
+    line-height: 1.7;
+
+    color: #e4d8e2;
+
+    margin:
+        0 0
+        15px;
+}
+
+
+/* ================================================= */
+/* CARTA */
+/* ================================================= */
+
+.letter {
+
+    background: #f3e7d4;
+
+    color: #17151a;
+
+    padding:
+        70px 20px
+        40px;
+}
+
+.letter article {
+
+    width:
+        min(760px, 92vw);
+
+    background: #fffaf0;
+
+    padding:
+        clamp(30px, 6vw, 75px);
+
+    border:
+        2px solid #111;
+
+    box-shadow:
+        12px 12px #111;
+}
+
+.letter h2 {
+
+    font-family: Bangers;
+
+    font-weight: 400;
+
+    font-size:
+        clamp(60px, 8vw, 90px);
+
+    line-height: .85;
+
+    margin:
+        20px 0
+        35px;
+}
+
+.letter h2 span {
+    color: #d92b4b;
+}
+
+.letter p {
+
+    line-height: 1.9;
+
+    color: #3d3940;
+}
+
+.sig {
+
+    margin-top: 40px;
+
+    font-family: cursive;
+
+    font-size: 20px;
+}
+
+
+/* ================================================= */
+/* CELULAR */
+/* ================================================= */
+
+@media (max-width: 750px) {
+
+    .screen {
+
+        height: 100dvh;
+
+        min-height: 100dvh;
+    }
+
+    header {
+
+        height: 56px;
+
+        padding:
+            0 18px;
+    }
+
+    header .brand {
+        font-size: 24px;
+    }
+
+    header em {
+
+        font-size: 8px;
+
+        letter-spacing: 2px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+
+        padding:
+            75px 25px
+            35px;
+    }
+
+    .hero .copy {
+
+        width: 100%;
+
+        margin: 0;
+    }
+
+    .hero h1 {
+
+        font-size:
+            clamp(
+                52px,
+                15vw,
+                90px
+            );
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .spider {
+
+        right: -25px;
+
+        top: 12%;
+
+        font-size: 65px;
+
+        opacity: .8;
+    }
+
+
+    /* MISSÃO */
+
+    .mission {
+
+        padding:
+            75px 20px
+            30px;
+    }
+
+    .panel {
+
+        width: 100%;
+
+        padding: 25px;
+
+        box-shadow:
+            8px 8px rgba(233,35,50,.12);
+    }
+
+    .panel h2 {
+
+        font-size:
+            clamp(
+                55px,
+                15vw,
+                85px
+            );
+    }
+
+
+    /* NATÁLIA */
+
+    .natalia {
+
+        padding:
+            75px 25px
+            35px;
+
+        align-items: center;
+    }
+
+    .natalia .copy {
+        width: 100%;
+    }
+
+    .natalia h2 {
+
+        font-size:
+            clamp(
+                60px,
+                16vw,
+                95px
+            );
+    }
+
+    .natalia p {
+        font-size: 14px;
+    }
+
+    .moon {
+
+        width: 150px;
+
+        right: -45px;
+
+        top: 10%;
+
+        opacity: .75;
+    }
+
+
+    /* ANIVERSÁRIO */
+
+    .birthday {
+
+        padding:
+            70px 18px
+            25px;
+
+        justify-content: center;
+
+        gap: 4px;
+    }
+
+    .birthday .num {
+
+        font-size:
+            clamp(
+                150px,
+                42vw,
+                230px
+            );
+
+        line-height: .58;
+
+        margin:
+            10px 0
+            15px;
+
+        text-shadow:
+            7px 7px var(--red);
+    }
+
+    .birthday h2 {
+
+        font-size:
+            clamp(
+                48px,
+                13vw,
+                75px
+            );
+
+        line-height: .78;
+
+        margin:
+            5px 0
+            10px;
+    }
+
+    .birthday > p {
+
+        width: 90%;
+
+        font-size: 12px;
+
+        line-height: 1.5;
+
+        margin-bottom: 10px;
+    }
+
+    .birthday button {
+
+        padding:
+            14px 18px;
+
+        font-size: 11px;
+
+        box-shadow:
+            4px 4px white;
+    }
+
+
+    /* CARTA */
+
+    .letter {
+
+        padding:
+            70px 18px
+            30px;
+    }
+
+    .letter article {
+
+        width: 100%;
+
+        padding:
+            30px 24px;
+
+        box-shadow:
+            7px 7px #111;
+    }
+
+    .letter h2 {
+        font-size: 60px;
+    }
+}
+
+
+/* ================================================= */
+/* CELULAR DEITADO */
+/* ================================================= */
+
+@media (
+    max-width: 900px
+) and (
+    orientation: landscape
+) {
+
+    .screen {
+
+        height: 100dvh;
+
+        min-height: 100dvh;
+    }
+
+    .hero,
+    .mission,
+    .natalia,
+    .birthday,
+    .letter {
+
+        padding-top: 55px;
+
+        padding-bottom: 15px;
+    }
+
+    .hero h1 {
+
+        font-size:
+            clamp(
+                42px,
+                9vw,
+                70px
+            );
+
+        margin: 8px 0;
+    }
+
+    .hero p {
+
+        font-size: 11px;
+
+        line-height: 1.4;
+    }
+
+    .spider {
+
+        right: 8%;
+
+        top: 15%;
+
+        font-size: 55px;
+    }
+
+    .panel {
+
+        max-height: 80dvh;
+
+        overflow: hidden;
+
+        padding: 20px;
+    }
+
+    .panel h2 {
+
+        font-size:
+            clamp(
+                45px,
+                10vw,
+                70px
+            );
+
+        margin: 10px 0;
+    }
+
+    .natalia h2 {
+
+        font-size:
+            clamp(
+                50px,
+                11vw,
+                80px
+            );
+
+        margin: 10px 0;
+    }
+
+    .natalia p {
+
+        font-size: 12px;
+
+        line-height: 1.45;
+
+        margin: 7px 0;
+    }
+
+    .moon {
+
+        width: 130px;
+
+        right: 8%;
+
+        top: 5%;
+    }
+
+
+    /* 22 NO CELULAR DEITADO */
+
+    .birthday {
+
+        padding:
+            50px 20px
+            15px;
+    }
+
+    .birthday .num {
+
+        font-size:
+            clamp(
+                100px,
+                28vh,
+                180px
+            );
+
+        line-height: .5;
+
+        margin:
+            5px 0
+            12px;
+
+        text-shadow:
+            6px 6px var(--red);
+    }
+
+    .birthday h2 {
+
+        font-size:
+            clamp(
+                38px,
+                9vh,
+                65px
+            );
+
+        margin:
+            5px 0
+            8px;
+    }
+
+    .birthday > p {
+
+        width:
+            min(600px, 85vw);
+
+        font-size: 10px;
+
+        line-height: 1.35;
+
+        margin:
+            0 0
+            8px;
+    }
+
+    .birthday button {
+
+        padding:
+            10px 15px;
+
+        font-size: 9px;
+    }
+}
+
+
+/* ================================================= */
+/* CELULARES MUITO PEQUENOS */
+/* ================================================= */
+
+@media (max-width: 380px) {
+
+    .birthday .num {
+
+        font-size: 145px;
+
+        text-shadow:
+            5px 5px var(--red);
+    }
+
+    .birthday h2 {
+        font-size: 45px;
+    }
+
+    .birthday > p {
+        font-size: 11px;
+    }
+
+    .birthday button {
+
+        font-size: 9px;
+
+        padding:
+            12px 14px;
+    }
+}
